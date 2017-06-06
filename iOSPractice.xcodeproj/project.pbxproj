@@ -123,6 +123,7 @@
 				8085ECFC1EE6514A00EAFCA4 /* CustomUI */,
 				8085ED001EE6514A00EAFCA4 /* Extensions */,
 				8085ED021EE6514A00EAFCA4 /* KYDrawerController */,
+				8085ED191EE69A8200EAFCA4 /* TestContentWall */,
 				8085ED111EE659B600EAFCA4 /* TestDrawer */,
 				8085ED141EE6831200EAFCA4 /* EnterViewController.swift */,
 			);
@@ -177,6 +178,13 @@
 				8085ED121EE659E500EAFCA4 /* TheMainViewController.swift */,
 			);
 			name = TestDrawer;
+			sourceTree = "<group>";
+		};
+		8085ED191EE69A8200EAFCA4 /* TestContentWall */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TestContentWall;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

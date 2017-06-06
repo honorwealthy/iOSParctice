@@ -58,6 +58,10 @@ extension EnterViewController : UITableViewDelegate {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let otherStoryboard = UIStoryboard(name: "NavigatorDrawer", bundle: nil)
         let navigatorDrawer = otherStoryboard.instantiateViewController(withIdentifier: "NavigatorDrawer") as! KYDrawerController
+        
+        let drawerWidth = UIScreen.main.bounds.width * 4 / 5
+        navigatorDrawer.drawerWidth = drawerWidth
+        
         self.present(navigatorDrawer, animated: true, completion: nil)
     }
 }

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -50,9 +51,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the main" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjn-NQ-Hsm" customClass="BorderLabel" customModule="iOSPractice" customModuleProvider="target">
-                                <rect key="frame" x="16" y="20" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the main" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjn-NQ-Hsm" customClass="BorderLabel" customModule="iOSPractice" customModuleProvider="target">
+                                <rect key="frame" x="117" y="151.5" width="141.5" height="30.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -66,11 +66,52 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCO-ar-bev" customClass="BorderLabel" customModule="iOSPractice" customModuleProvider="target">
+                                <rect key="frame" x="181" y="322.5" width="12.5" height="22.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuD-xg-fzo">
+                                <rect key="frame" x="166" y="353" width="43" height="30"/>
+                                <state key="normal" title="Click!!"/>
+                                <connections>
+                                    <action selector="clickWithSender:" destination="mnt-o4-DYc" eventType="touchUpInside" id="aIU-5T-bsJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zuD-xg-fzo" firstAttribute="top" secondItem="tCO-ar-bev" secondAttribute="bottom" constant="8" id="Kp0-Vt-aeo"/>
+                            <constraint firstItem="pjn-NQ-Hsm" firstAttribute="centerX" secondItem="hxS-n5-bOs" secondAttribute="centerX" id="hAd-Cv-xjn"/>
+                            <constraint firstItem="zuD-xg-fzo" firstAttribute="centerX" secondItem="hxS-n5-bOs" secondAttribute="centerX" id="jV7-ZY-J8x"/>
+                            <constraint firstItem="pjn-NQ-Hsm" firstAttribute="centerY" secondItem="hxS-n5-bOs" secondAttribute="centerY" multiplier="1:2" id="qOs-Pt-jkV"/>
+                            <constraint firstItem="tCO-ar-bev" firstAttribute="centerX" secondItem="hxS-n5-bOs" secondAttribute="centerX" id="zTa-LA-eYC"/>
+                            <constraint firstItem="tCO-ar-bev" firstAttribute="centerY" secondItem="hxS-n5-bOs" secondAttribute="centerY" id="zdx-nd-ldc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="HistoryValueLabel" destination="tCO-ar-bev" id="Xx9-Hl-Lac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Dn-Gp-IWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,6 +129,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="fH3-Zj-nlH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the drawer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9n-4l-peZ" customClass="BorderLabel" customModule="iOSPractice" customModuleProvider="target">
                                 <rect key="frame" x="16" y="20" width="343" height="24.5"/>
                                 <color key="backgroundColor" red="0.84705882349999995" green="0.16078431369999999" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -118,12 +162,25 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAR-IF-Bdr">
+                                <rect key="frame" x="167" y="318" width="40" height="30"/>
+                                <state key="normal" title="BACK"/>
+                                <connections>
+                                    <action selector="goBackWithSender:" destination="90b-Sh-GnS" eventType="touchUpInside" id="PPu-M1-xyt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fH3-Zj-nlH" firstAttribute="top" secondItem="RHx-YF-0ms" secondAttribute="top" id="1Wa-57-qy3"/>
+                            <constraint firstItem="fH3-Zj-nlH" firstAttribute="leading" secondItem="RHx-YF-0ms" secondAttribute="leading" id="1vl-DQ-khd"/>
+                            <constraint firstItem="eAR-IF-Bdr" firstAttribute="centerX" secondItem="RHx-YF-0ms" secondAttribute="centerX" id="BZt-GA-hmm"/>
                             <constraint firstAttribute="trailing" secondItem="V9n-4l-peZ" secondAttribute="trailing" constant="16" id="F7v-md-xc1"/>
                             <constraint firstItem="V9n-4l-peZ" firstAttribute="top" secondItem="46F-hH-xKI" secondAttribute="bottom" id="S2u-2I-guA"/>
+                            <constraint firstItem="wrN-Om-r2K" firstAttribute="top" secondItem="fH3-Zj-nlH" secondAttribute="bottom" id="hWP-wR-7Ra"/>
                             <constraint firstItem="V9n-4l-peZ" firstAttribute="leading" secondItem="RHx-YF-0ms" secondAttribute="leading" constant="16" id="jt2-dV-LSZ"/>
+                            <constraint firstAttribute="trailing" secondItem="fH3-Zj-nlH" secondAttribute="trailing" id="mfA-qN-eRj"/>
+                            <constraint firstItem="eAR-IF-Bdr" firstAttribute="centerY" secondItem="RHx-YF-0ms" secondAttribute="centerY" id="rjp-QK-W4U"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -132,4 +189,7 @@
             <point key="canvasLocation" x="472.80000000000001" y="-303.59820089955025"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="492" height="859"/>
+    </resources>
 </document>
