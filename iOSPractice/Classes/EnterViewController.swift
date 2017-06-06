@@ -17,6 +17,8 @@ class EnterViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        TestList.Instance.addTest(TestNavigatorDrawer())
+        
         menuTableView.dataSource = self
         menuTableView.delegate = self
     }
@@ -37,7 +39,7 @@ extension EnterViewController : UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return TestList.Instance.SampleList.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,7 +48,7 @@ extension EnterViewController : UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: reusableId, for: indexPath)
         
-        cell.textLabel?.text = "drawer test"
+        cell.textLabel?.text = TestList.Instance.SampleList[indexPath.item].DisplayName
         
         return cell
     }
@@ -56,12 +58,9 @@ extension EnterViewController : UITableViewDataSource {
 
 extension EnterViewController : UITableViewDelegate {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let otherStoryboard = UIStoryboard(name: "NavigatorDrawer", bundle: nil)
-        let navigatorDrawer = otherStoryboard.instantiateViewController(withIdentifier: "NavigatorDrawer") as! KYDrawerController
+        let vc = TestList.Instance.SampleList[indexPath.item].generateVC()
         
-        let drawerWidth = UIScreen.main.bounds.width * 4 / 5
-        navigatorDrawer.drawerWidth = drawerWidth
-        
-        self.present(navigatorDrawer, animated: true, completion: nil)
+        self.present(vc, animated: true, completion: nil)
     }
 }
+
