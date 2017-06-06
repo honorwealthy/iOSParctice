@@ -23,6 +23,8 @@
 		8085ED0E1EE6514A00EAFCA4 /* KYEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ED051EE6514A00EAFCA4 /* KYEmbedMainControllerSegue.swift */; };
 		8085ED101EE659A200EAFCA4 /* TheDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ED0F1EE659A200EAFCA4 /* TheDrawerViewController.swift */; };
 		8085ED131EE659E500EAFCA4 /* TheMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ED121EE659E500EAFCA4 /* TheMainViewController.swift */; };
+		8085ED151EE6831200EAFCA4 /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ED141EE6831200EAFCA4 /* EnterViewController.swift */; };
+		8085ED181EE6833800EAFCA4 /* NavigatorDrawer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8085ED161EE6833800EAFCA4 /* NavigatorDrawer.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		8085ED051EE6514A00EAFCA4 /* KYEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
 		8085ED0F1EE659A200EAFCA4 /* TheDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TheDrawerViewController.swift; path = Classes/TestDrawer/TheDrawerViewController.swift; sourceTree = "<group>"; };
 		8085ED121EE659E500EAFCA4 /* TheMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TheMainViewController.swift; path = Classes/TestDrawer/TheMainViewController.swift; sourceTree = "<group>"; };
+		8085ED141EE6831200EAFCA4 /* EnterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnterViewController.swift; path = Classes/EnterViewController.swift; sourceTree = "<group>"; };
+		8085ED171EE6833800EAFCA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NavigatorDrawer.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			children = (
 				8085ECE21EE64AE100EAFCA4 /* Main.storyboard */,
 				8085ECEA1EE64AE100EAFCA4 /* LaunchScreen.storyboard */,
+				8085ED161EE6833800EAFCA4 /* NavigatorDrawer.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 				8085ED001EE6514A00EAFCA4 /* Extensions */,
 				8085ED021EE6514A00EAFCA4 /* KYDrawerController */,
 				8085ED111EE659B600EAFCA4 /* TestDrawer */,
+				8085ED141EE6831200EAFCA4 /* EnterViewController.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8085ECEC1EE64AE100EAFCA4 /* LaunchScreen.storyboard in Resources */,
+				8085ED181EE6833800EAFCA4 /* NavigatorDrawer.storyboard in Resources */,
 				8085ECE91EE64AE100EAFCA4 /* Assets.xcassets in Resources */,
 				8085ECE41EE64AE100EAFCA4 /* Main.storyboard in Resources */,
 			);
@@ -247,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8085ED071EE6514A00EAFCA4 /* DatabaseController.swift in Sources */,
+				8085ED151EE6831200EAFCA4 /* EnterViewController.swift in Sources */,
 				8085ED061EE6514A00EAFCA4 /* CoreDataConnect.swift in Sources */,
 				8085ECE71EE64AE100EAFCA4 /* iOSPractice.xcdatamodeld in Sources */,
 				8085ED0C1EE6514A00EAFCA4 /* KYDrawerController.swift in Sources */,
@@ -279,6 +287,14 @@
 				8085ECEB1EE64AE100EAFCA4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8085ED161EE6833800EAFCA4 /* NavigatorDrawer.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8085ED171EE6833800EAFCA4 /* Base */,
+			);
+			name = NavigatorDrawer.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
