@@ -38,3 +38,16 @@ class TestNavigatorDrawer: TestSampleData {
         return navigatorDrawer
     }
 }
+
+class TestContentWall: TestSampleData {
+    override var DisplayName: String {
+        get {
+            return "content wall test"
+        }
+    }
+    
+    override func generateVC() -> UIViewController {
+        let otherStoryboard = UIStoryboard(name: "ContentWall", bundle: nil)
+        return otherStoryboard.instantiateViewController(withIdentifier: "ContentWallViewController")
+    }
+}

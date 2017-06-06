@@ -18,6 +18,7 @@ class EnterViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         TestList.Instance.addTest(TestNavigatorDrawer())
+        TestList.Instance.addTest(TestContentWall())
         
         menuTableView.dataSource = self
         menuTableView.delegate = self

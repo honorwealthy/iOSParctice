@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Content Wall View Controller-->
+        <scene sceneID="7DS-HM-Dls">
+            <objects>
+                <viewController storyboardIdentifier="ContentWallViewController" id="6NJ-Dn-cJi" customClass="ContentWallViewController" customModule="iOSPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2NF-dQ-gUb"/>
+                        <viewControllerLayoutGuide type="bottom" id="G9T-Ip-6Fp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="33v-H0-W4t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Sv5-OO-Kka">
+                                <rect key="frame" x="0.0" y="0.0" width="368" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewLayout key="collectionViewLayout" id="S9S-Z5-ZXe" customClass="StaggeredGridLayout" customModule="iOSPractice" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ContentCell" id="UdJ-Vm-nhh" customClass="ContentCell" customModule="iOSPractice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Pp-Qh-h2L">
+                                                    <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeJ-eA-Ot5" customClass="BorderLabel" customModule="iOSPractice" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="145.5" width="56" height="24.5"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="JeJ-eA-Ot5" firstAttribute="leading" secondItem="UdJ-Vm-nhh" secondAttribute="leading" id="CYb-0u-RSz"/>
+                                            <constraint firstAttribute="bottom" secondItem="8Pp-Qh-h2L" secondAttribute="bottom" id="Ksq-8M-vTM"/>
+                                            <constraint firstAttribute="bottom" secondItem="JeJ-eA-Ot5" secondAttribute="bottom" id="R3i-uS-AXc"/>
+                                            <constraint firstItem="8Pp-Qh-h2L" firstAttribute="leading" secondItem="UdJ-Vm-nhh" secondAttribute="leading" id="Yfm-BZ-4mB"/>
+                                            <constraint firstAttribute="trailing" secondItem="8Pp-Qh-h2L" secondAttribute="trailing" id="rKB-R3-Ihs"/>
+                                            <constraint firstItem="JeJ-eA-Ot5" firstAttribute="width" relation="lessThanOrEqual" secondItem="UdJ-Vm-nhh" secondAttribute="width" id="rQa-2U-lgq"/>
+                                            <constraint firstItem="8Pp-Qh-h2L" firstAttribute="top" secondItem="UdJ-Vm-nhh" secondAttribute="top" id="wff-TD-vLh"/>
+                                        </constraints>
+                                        <size key="customSize" width="170" height="170"/>
+                                        <connections>
+                                            <outlet property="caption" destination="JeJ-eA-Ot5" id="baN-v9-dPD"/>
+                                            <outlet property="imageView" destination="8Pp-Qh-h2L" id="weY-nN-YR8"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentCollectionView" destination="Sv5-OO-Kka" id="dVv-jb-3rT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xsY-sN-wmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364" y="176.76161919040482"/>
+        </scene>
+    </scenes>
+</document>
