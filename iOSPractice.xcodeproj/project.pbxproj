@@ -12,7 +12,17 @@
 		8085ECE71EE64AE100EAFCA4 /* iOSPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8085ECE51EE64AE100EAFCA4 /* iOSPractice.xcdatamodeld */; };
 		8085ECE91EE64AE100EAFCA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8085ECE81EE64AE100EAFCA4 /* Assets.xcassets */; };
 		8085ECEC1EE64AE100EAFCA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8085ECEA1EE64AE100EAFCA4 /* LaunchScreen.storyboard */; };
-		8085ECF81EE64BD000EAFCA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ECF71EE64BD000EAFCA4 /* ViewController.swift */; };
+		8085ED061EE6514A00EAFCA4 /* CoreDataConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ECFA1EE6514A00EAFCA4 /* CoreDataConnect.swift */; };
+		8085ED071EE6514A00EAFCA4 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ECFB1EE6514A00EAFCA4 /* DatabaseController.swift */; };
+		8085ED081EE6514A00EAFCA4 /* BorderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ECFD1EE6514A00EAFCA4 /* BorderLabel.swift */; };
+		8085ED091EE6514A00EAFCA4 /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ECFE1EE6514A00EAFCA4 /* BorderView.swift */; };
+		8085ED0A1EE6514A00EAFCA4 /* FlipImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ECFF1EE6514A00EAFCA4 /* FlipImageView.swift */; };
+		8085ED0B1EE6514A00EAFCA4 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ED011EE6514A00EAFCA4 /* UIColorExtension.swift */; };
+		8085ED0C1EE6514A00EAFCA4 /* KYDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ED031EE6514A00EAFCA4 /* KYDrawerController.swift */; };
+		8085ED0D1EE6514A00EAFCA4 /* KYEmbedDrawerControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ED041EE6514A00EAFCA4 /* KYEmbedDrawerControllerSegue.swift */; };
+		8085ED0E1EE6514A00EAFCA4 /* KYEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ED051EE6514A00EAFCA4 /* KYEmbedMainControllerSegue.swift */; };
+		8085ED101EE659A200EAFCA4 /* TheDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ED0F1EE659A200EAFCA4 /* TheDrawerViewController.swift */; };
+		8085ED131EE659E500EAFCA4 /* TheMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8085ED121EE659E500EAFCA4 /* TheMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +33,17 @@
 		8085ECE81EE64AE100EAFCA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8085ECEB1EE64AE100EAFCA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8085ECED1EE64AE100EAFCA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8085ECF71EE64BD000EAFCA4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Classes/ViewController.swift; sourceTree = "<group>"; };
+		8085ECFA1EE6514A00EAFCA4 /* CoreDataConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataConnect.swift; sourceTree = "<group>"; };
+		8085ECFB1EE6514A00EAFCA4 /* DatabaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
+		8085ECFD1EE6514A00EAFCA4 /* BorderLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderLabel.swift; sourceTree = "<group>"; };
+		8085ECFE1EE6514A00EAFCA4 /* BorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
+		8085ECFF1EE6514A00EAFCA4 /* FlipImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipImageView.swift; sourceTree = "<group>"; };
+		8085ED011EE6514A00EAFCA4 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		8085ED031EE6514A00EAFCA4 /* KYDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYDrawerController.swift; sourceTree = "<group>"; };
+		8085ED041EE6514A00EAFCA4 /* KYEmbedDrawerControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYEmbedDrawerControllerSegue.swift; sourceTree = "<group>"; };
+		8085ED051EE6514A00EAFCA4 /* KYEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
+		8085ED0F1EE659A200EAFCA4 /* TheDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TheDrawerViewController.swift; path = Classes/TestDrawer/TheDrawerViewController.swift; sourceTree = "<group>"; };
+		8085ED121EE659E500EAFCA4 /* TheMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TheMainViewController.swift; path = Classes/TestDrawer/TheMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +114,63 @@
 		8085ECF61EE64BC300EAFCA4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8085ECF71EE64BD000EAFCA4 /* ViewController.swift */,
+				8085ECF91EE6514A00EAFCA4 /* CoreData */,
+				8085ECFC1EE6514A00EAFCA4 /* CustomUI */,
+				8085ED001EE6514A00EAFCA4 /* Extensions */,
+				8085ED021EE6514A00EAFCA4 /* KYDrawerController */,
+				8085ED111EE659B600EAFCA4 /* TestDrawer */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		8085ECF91EE6514A00EAFCA4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8085ECFA1EE6514A00EAFCA4 /* CoreDataConnect.swift */,
+				8085ECFB1EE6514A00EAFCA4 /* DatabaseController.swift */,
+			);
+			name = CoreData;
+			path = Classes/CoreData;
+			sourceTree = "<group>";
+		};
+		8085ECFC1EE6514A00EAFCA4 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				8085ECFD1EE6514A00EAFCA4 /* BorderLabel.swift */,
+				8085ECFE1EE6514A00EAFCA4 /* BorderView.swift */,
+				8085ECFF1EE6514A00EAFCA4 /* FlipImageView.swift */,
+			);
+			name = CustomUI;
+			path = Classes/CustomUI;
+			sourceTree = "<group>";
+		};
+		8085ED001EE6514A00EAFCA4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8085ED011EE6514A00EAFCA4 /* UIColorExtension.swift */,
+			);
+			name = Extensions;
+			path = Classes/Extensions;
+			sourceTree = "<group>";
+		};
+		8085ED021EE6514A00EAFCA4 /* KYDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				8085ED031EE6514A00EAFCA4 /* KYDrawerController.swift */,
+				8085ED041EE6514A00EAFCA4 /* KYEmbedDrawerControllerSegue.swift */,
+				8085ED051EE6514A00EAFCA4 /* KYEmbedMainControllerSegue.swift */,
+			);
+			name = KYDrawerController;
+			path = Classes/KYDrawerController;
+			sourceTree = "<group>";
+		};
+		8085ED111EE659B600EAFCA4 /* TestDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				8085ED0F1EE659A200EAFCA4 /* TheDrawerViewController.swift */,
+				8085ED121EE659E500EAFCA4 /* TheMainViewController.swift */,
+			);
+			name = TestDrawer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,9 +246,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8085ECF81EE64BD000EAFCA4 /* ViewController.swift in Sources */,
+				8085ED071EE6514A00EAFCA4 /* DatabaseController.swift in Sources */,
+				8085ED061EE6514A00EAFCA4 /* CoreDataConnect.swift in Sources */,
 				8085ECE71EE64AE100EAFCA4 /* iOSPractice.xcdatamodeld in Sources */,
+				8085ED0C1EE6514A00EAFCA4 /* KYDrawerController.swift in Sources */,
+				8085ED081EE6514A00EAFCA4 /* BorderLabel.swift in Sources */,
+				8085ED0D1EE6514A00EAFCA4 /* KYEmbedDrawerControllerSegue.swift in Sources */,
+				8085ED131EE659E500EAFCA4 /* TheMainViewController.swift in Sources */,
+				8085ED0B1EE6514A00EAFCA4 /* UIColorExtension.swift in Sources */,
+				8085ED0E1EE6514A00EAFCA4 /* KYEmbedMainControllerSegue.swift in Sources */,
 				8085ECDF1EE64AE100EAFCA4 /* AppDelegate.swift in Sources */,
+				8085ED101EE659A200EAFCA4 /* TheDrawerViewController.swift in Sources */,
+				8085ED091EE6514A00EAFCA4 /* BorderView.swift in Sources */,
+				8085ED0A1EE6514A00EAFCA4 /* FlipImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +381,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FE7Q7JM4SN;
 				INFOPLIST_FILE = iOSPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = honorwealthy.iOSPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +395,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FE7Q7JM4SN;
 				INFOPLIST_FILE = iOSPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = honorwealthy.iOSPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
