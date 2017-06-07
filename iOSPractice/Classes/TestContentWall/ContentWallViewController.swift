@@ -35,6 +35,10 @@ class ContentWallViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func goBack(sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
 }
 
