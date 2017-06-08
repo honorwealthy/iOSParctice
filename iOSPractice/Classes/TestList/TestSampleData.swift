@@ -51,3 +51,16 @@ class TestContentWall: TestSampleData {
         return otherStoryboard.instantiateViewController(withIdentifier: "ContentWallViewController")
     }
 }
+
+class TestLoadJson: TestSampleData {
+    override var DisplayName: String {
+        get {
+            return "load json test"
+        }
+    }
+    
+    override func generateVC() -> UIViewController {
+        let otherStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        return otherStoryboard.instantiateViewController(withIdentifier: "TestLoadJson")
+    }
+}

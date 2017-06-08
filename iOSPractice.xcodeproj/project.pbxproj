@@ -35,6 +35,12 @@
 		80A24E651EE6B04F003B9AAF /* ContentWall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A24E631EE6B04F003B9AAF /* ContentWall.storyboard */; };
 		80A24E671EE6B1CC003B9AAF /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A24E661EE6B1CC003B9AAF /* ContentCell.swift */; };
 		80A24ED11EE80ABC003B9AAF /* iOSPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A24ED01EE80ABC003B9AAF /* iOSPracticeTests.swift */; };
+		80A24EDF1EE8EDAD003B9AAF /* comic_sans_ms_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80A24EDC1EE8EDAD003B9AAF /* comic_sans_ms_bold.ttf */; };
+		80A24EE01EE8EDAD003B9AAF /* comic_sans_ms.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80A24EDD1EE8EDAD003B9AAF /* comic_sans_ms.ttf */; };
+		80A24EE11EE8EDAD003B9AAF /* helsinki.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80A24EDE1EE8EDAD003B9AAF /* helsinki.ttf */; };
+		80A24EE41EE8EFB6003B9AAF /* story_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 80A24EE31EE8EFB6003B9AAF /* story_list.json */; };
+		80A24EEA1EE8F6AB003B9AAF /* TestLoadJsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A24EE91EE8F6AB003B9AAF /* TestLoadJsonViewController.swift */; };
+		80A24EEC1EE8F8CB003B9AAF /* TestClassFromJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A24EEB1EE8F8CB003B9AAF /* TestClassFromJson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +85,12 @@
 		80A24ECE1EE80ABC003B9AAF /* iOSPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A24ED01EE80ABC003B9AAF /* iOSPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPracticeTests.swift; sourceTree = "<group>"; };
 		80A24ED21EE80ABC003B9AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A24EDC1EE8EDAD003B9AAF /* comic_sans_ms_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = comic_sans_ms_bold.ttf; path = Resources/Fonts/comic_sans_ms_bold.ttf; sourceTree = "<group>"; };
+		80A24EDD1EE8EDAD003B9AAF /* comic_sans_ms.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = comic_sans_ms.ttf; path = Resources/Fonts/comic_sans_ms.ttf; sourceTree = "<group>"; };
+		80A24EDE1EE8EDAD003B9AAF /* helsinki.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = helsinki.ttf; path = Resources/Fonts/helsinki.ttf; sourceTree = "<group>"; };
+		80A24EE31EE8EFB6003B9AAF /* story_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = story_list.json; path = Resources/JsonData/story_list.json; sourceTree = "<group>"; };
+		80A24EE91EE8F6AB003B9AAF /* TestLoadJsonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestLoadJsonViewController.swift; path = Classes/TestLoadJson/TestLoadJsonViewController.swift; sourceTree = "<group>"; };
+		80A24EEB1EE8F8CB003B9AAF /* TestClassFromJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestClassFromJson.swift; path = Classes/TestLoadJson/TestClassFromJson.swift; sourceTree = "<group>"; };
 		C00ADFFAD1AE0C9A4CB134FF /* Pods-iOSPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPractice/Pods-iOSPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		C3E77B851D93C070354F4040 /* Pods-iOSPractice-iOSPracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPractice-iOSPracticeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPractice-iOSPracticeTests/Pods-iOSPractice-iOSPracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ECBB4AE9C694648426F51E44 /* Pods_iOSPractice_iOSPracticeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPractice_iOSPracticeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,8 +143,8 @@
 			children = (
 				8085ECDE1EE64AE100EAFCA4 /* AppDelegate.swift */,
 				8085ECE51EE64AE100EAFCA4 /* iOSPractice.xcdatamodeld */,
-				8085ECF41EE64BAA00EAFCA4 /* Assets */,
 				8085ECF61EE64BC300EAFCA4 /* Classes */,
+				80A24EDA1EE8EC96003B9AAF /* Resources */,
 				8085ECF31EE64BA300EAFCA4 /* Storyboards */,
 				8085ECF51EE64BB100EAFCA4 /* Support Files */,
 			);
@@ -150,12 +162,12 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
-		8085ECF41EE64BAA00EAFCA4 /* Assets */ = {
+		8085ECF41EE64BAA00EAFCA4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
 				8085ECE81EE64AE100EAFCA4 /* Assets.xcassets */,
 			);
-			name = Assets;
+			name = Images;
 			sourceTree = "<group>";
 		};
 		8085ECF51EE64BB100EAFCA4 /* Support Files */ = {
@@ -272,8 +284,38 @@
 		80A24ED91EE81052003B9AAF /* TestLoadJson */ = {
 			isa = PBXGroup;
 			children = (
+				80A24EE91EE8F6AB003B9AAF /* TestLoadJsonViewController.swift */,
+				80A24EEB1EE8F8CB003B9AAF /* TestClassFromJson.swift */,
 			);
 			name = TestLoadJson;
+			sourceTree = "<group>";
+		};
+		80A24EDA1EE8EC96003B9AAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80A24EDB1EE8EDA1003B9AAF /* Fonts */,
+				8085ECF41EE64BAA00EAFCA4 /* Images */,
+				80A24EE21EE8EF32003B9AAF /* JsonData */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		80A24EDB1EE8EDA1003B9AAF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				80A24EDC1EE8EDAD003B9AAF /* comic_sans_ms_bold.ttf */,
+				80A24EDD1EE8EDAD003B9AAF /* comic_sans_ms.ttf */,
+				80A24EDE1EE8EDAD003B9AAF /* helsinki.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		80A24EE21EE8EF32003B9AAF /* JsonData */ = {
+			isa = PBXGroup;
+			children = (
+				80A24EE31EE8EFB6003B9AAF /* story_list.json */,
+			);
+			name = JsonData;
 			sourceTree = "<group>";
 		};
 		CB0D05A9A7EEFE9B09A10E5E /* Pods */ = {
@@ -387,11 +429,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A24EE41EE8EFB6003B9AAF /* story_list.json in Resources */,
+				80A24EDF1EE8EDAD003B9AAF /* comic_sans_ms_bold.ttf in Resources */,
 				8085ECEC1EE64AE100EAFCA4 /* LaunchScreen.storyboard in Resources */,
+				80A24EE01EE8EDAD003B9AAF /* comic_sans_ms.ttf in Resources */,
 				8085ED181EE6833800EAFCA4 /* NavigatorDrawer.storyboard in Resources */,
 				80A24E651EE6B04F003B9AAF /* ContentWall.storyboard in Resources */,
 				8085ECE91EE64AE100EAFCA4 /* Assets.xcassets in Resources */,
 				8085ECE41EE64AE100EAFCA4 /* Main.storyboard in Resources */,
+				80A24EE11EE8EDAD003B9AAF /* helsinki.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,9 +557,11 @@
 				8085ED081EE6514A00EAFCA4 /* BorderLabel.swift in Sources */,
 				80A24E671EE6B1CC003B9AAF /* ContentCell.swift in Sources */,
 				8085ED0D1EE6514A00EAFCA4 /* KYEmbedDrawerControllerSegue.swift in Sources */,
+				80A24EEC1EE8F8CB003B9AAF /* TestClassFromJson.swift in Sources */,
 				8085ED131EE659E500EAFCA4 /* TheMainViewController.swift in Sources */,
 				8085ED0B1EE6514A00EAFCA4 /* UIColorExtension.swift in Sources */,
 				8085ED1C1EE6A3C400EAFCA4 /* TestList.swift in Sources */,
+				80A24EEA1EE8F6AB003B9AAF /* TestLoadJsonViewController.swift in Sources */,
 				8085ED0E1EE6514A00EAFCA4 /* KYEmbedMainControllerSegue.swift in Sources */,
 				80A24E5C1EE6A440003B9AAF /* TestSampleData.swift in Sources */,
 				8085ECDF1EE64AE100EAFCA4 /* AppDelegate.swift in Sources */,
